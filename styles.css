@@ -1,0 +1,179 @@
+body {
+  background-color: #252f39;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  border-radius: 30px;
+  border: 10px solid #05315b;
+  outline: 10px solid #c8e4ff;
+  width: 50%;
+  height: 700px;
+  background-color: #5a748c;
+  display: grid;
+  grid-template-rows: 100px 150px 100px auto; /* 2 rows */
+  gap: 10px; /* Space between grid items */
+  padding: 20px;
+  font-family: "Press Start 2P";
+}
+
+#item1 {
+  padding: 20px;
+  color: #76bdff;
+  font-size: 4vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 5px 5px 0 #40a2ff, -5px -5px 0 #40a2ff, 5px -5px 0 #40a2ff,
+    -5px 5px 0 #40a2ff, 10px 10px 0 #0059ad, -10px -10px 0 #0059ad,
+    10px -10px 0 #0059ad, -10px 10px 0 #0059ad, 15px 15px 0 #c8e4ff,
+    -15px -15px 0 #c8e4ff, 15px -15px 0 #c8e4ff, -15px 15px 0 #c8e4ff,
+    20px 20px 0 #05315b, -20px -20px 0 #05315b, 20px -20px 0 #05315b,
+    -20px 20px 0 #05315b;
+}
+
+#item2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  gap: 30px;
+}
+
+#taskInput {
+  padding: 10px;
+  padding-left: 20px;
+  outline: 8px solid #05315b;
+  background-color: #ddefff;
+  color: #05315b;
+  font-family: "Press Start 2P";
+  font-size: 25px;
+  width: 60%;
+  border-radius: 30px;
+  border: none;
+}
+
+::placeholder {
+  color: #67b5ff;
+}
+
+#addButton {
+  padding: 10px;
+  outline: 8px solid #05315b;
+  color: #05315b;
+  background-color: #76bdff;
+  font-family: "Press Start 2P";
+  font-size: 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addButton:hover {
+  background-color: #329cff;
+}
+
+#addButton:active {
+  backgroud-color: #1a90ff;
+}
+
+#item3 {
+  padding: 20px;
+  color: #76bdff;
+  font-size: 2.5vw;
+  text-align: center;
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  text-shadow: 3px 3px 0 #0059ad, -3px -3px 0 #0059ad, 3px -3px 0 #0059ad,
+    -3px 3px 0 #0059ad, 7px 7px 0 #05315b, -7px -7px 0 #05315b,
+    7px -7px 0 #05315b, -7px 7px 0 #05315b;
+}
+
+#item4 {
+  color: #3ca0ff;
+  text-shadow: 3px 3px 0 #05315b, -3px -3px 0 #05315b, 3px -3px 0 #05315b,
+    -3px 3px 0 #05315b, 4px 4px 0 white, -4px -4px 0 white, 4px -4px 0 white,
+    -4px 4px 0 white, 5px 5px 0 #99cdff, -5px -5px 0 #99cdff, 5px -5px 0 #99cdff,
+    -5px 5px 0 #99cdff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+  padding-right: 10px;
+}
+
+#item4::-webkit-scrollbar {
+  width: 8px;
+}
+
+#item4::-webkit-scrollbar-thumb {
+  background-color: #05315b;
+  border-radius: 10px;
+}
+
+.task {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.task-text {
+  font-size: 35px;
+  flex: 1; /* Makes the text take full width */
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word; /* Prevent text overflow */
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  white-space: nowrap;
+}
+
+.delete-btn {
+  align-items: right;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.edit-btn {
+  text-shadow: 1px 1px 0 #99cdff, -1px -1px 0 #99cdff, 1px -1px 0 #99cdff,
+    -1px 1px 0 #99cdff;
+  color: #05315b;
+  align-items: right;
+  border: none;
+  background: transparent;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.delete-btn:hover,
+.edit-btn:hover {
+  background-color: #329cff;
+  border-radius: 15px;
+}
+
+.delete-btn:focus,
+.edit-btn:focus {
+  background-color: transparent; /* Reset background color */
+}
+
+.delete-btn:active,
+.edit-btn:active {
+  background-color: #2e99ff; /* Active background color when clicked */
+}
