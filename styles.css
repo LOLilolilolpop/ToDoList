@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  gap: 20px;
 }
 
 .grid {
@@ -176,4 +177,84 @@ body {
 .delete-btn:active,
 .edit-btn:active {
   background-color: #2e99ff; /* Active background color when clicked */
+}
+
+.completed-section {
+  border-radius: 30px;
+  border: 10px solid #05315b;
+  outline: 10px solid #c8e4ff;
+  width: 650px;
+  height: 700px;
+  background-color: #5a748c;
+  display: grid;
+  grid-template-rows: 70px auto 60px; /* 2 rows */
+  gap: 10px; /* Space between grid items */
+  padding: 20px;
+  font-family: "Press Start 2P";
+}
+
+.completed-header {
+  padding: 20px;
+  color: #76bdff;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 3px 3px 0 #40a2ff, -3px -3px 0 #40a2ff, 3px -3px 0 #40a2ff,
+    -3px 3px 0 #40a2ff, 5px 5px 0 #0059ad, -5px -5px 0 #0059ad,
+    5px -5px 0 #0059ad, -5px 5px 0 #0059ad, 7px 7px 0 #c8e4ff,
+    -7px -7px 0 #c8e4ff, 7px -7px 0 #c8e4ff, -7px 7px 0 #c8e4ff,
+    9px 9px 0 #05315b, -9px -9px 0 #05315b, 9px -9px 0 #05315b,
+    -9px 9px 0 #05315b;
+}
+
+// .....................................
+.completed-body {
+}
+
+.tasks-completion {
+  display: flex;
+  color: #76bdff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#completed-text,
+#incompleted-text {
+  font-size: 15px;
+  text-shadow: 1px 1px 0 #40a2ff, -1px -1px 0 #40a2ff, 1px -1px 0 #40a2ff,
+    -1px 1px 0 #40a2ff, 2px 2px 0 #0059ad, -2px -2px 0 #0059ad,
+    2px -2px 0 #0059ad, -2px 2px 0 #0059ad, 3px 3px 0 #c8e4ff,
+    -3px -3px 0 #c8e4ff, 3px -3px 0 #c8e4ff, -3px 3px 0 #c8e4ff,
+    4px 4px 0 #05315b, -4px -4px 0 #05315b, 4px -4px 0 #05315b,
+    -4px 4px 0 #05315b;
+}
+
+#completed-number,
+#incompleted-number {
+  width: auto;
+  font-size: 15px;
+  text-shadow: 1px 1px 0 #40a2ff, -1px -1px 0 #40a2ff, 1px -1px 0 #40a2ff,
+    -1px 1px 0 #40a2ff, 2px 2px 0 #0059ad, -2px -2px 0 #0059ad,
+    2px -2px 0 #0059ad, -2px 2px 0 #0059ad, 3px 3px 0 #c8e4ff,
+    -3px -3px 0 #c8e4ff, 3px -3px 0 #c8e4ff, -3px 3px 0 #c8e4ff,
+    4px 4px 0 #05315b, -4px -4px 0 #05315b, 4px -4px 0 #05315b,
+    -4px 4px 0 #05315b;
+}
+
+#line-separate {
+  font-size: 15px;
+  text-shadow: -1px 0 0 #0059ad, 1px 0 0 #0059ad, 0 -10px 0 #76bdff,
+    -1px -10px 0 #0059ad, 1px -10px 0 #0059ad, 0 -20px 0 #76bdff,
+    -1px -20px 0 #0059ad, 1px -20px 0 #0059ad, 0 10px 0 #76bdff,
+    -1px 10px 0 #0059ad, 1px 10px 0 #0059ad, 0 20px 0 #76bdff,
+    -1px 20px 0 #0059ad, 1px 20px 0 #0059ad, -2px 0 0 #c8e4ff, 2px 0 0 #c8e4ff,
+    -2px -10px 0 #c8e4ff, 2px -10px 0 #c8e4ff, -2px -20px 0 #c8e4ff,
+    2px -20px 0 #c8e4ff, -2px 10px 0 #c8e4ff, 2px 10px 0 #c8e4ff,
+    -2px 20px 0 #c8e4ff, 2px 20px 0 #c8e4ff, -3px 0 0 #05315b, 3px 0 0 #05315b,
+    -3px -10px 0 #05315b, 3px -10px 0 #05315b, -3px -20px 0 #05315b,
+    3px -20px 0 #05315b, -3px 10px 0 #05315b, 3px 10px 0 #05315b,
+    -3px 20px 0 #05315b, 3px 20px 0 #05315b;
 }

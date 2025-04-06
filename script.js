@@ -32,13 +32,13 @@ function displayTasks(tasks) {
 
     // Edit Button
     const editButton = document.createElement("button");
-    editButton.textContent = "✎";
+    editButton.textContent = "✏️";
     editButton.classList.add("edit-btn");
     editButton.onclick = () => editTask(index);
 
     // Delete Button
     const deleteButton = document.createElement("button");
-    deleteButton.textContent = "🗑️";
+    deleteButton.textContent = "❌";
     deleteButton.classList.add("delete-btn");
     deleteButton.onclick = () => deleteTask(index);
 
